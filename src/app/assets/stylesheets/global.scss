@@ -1,0 +1,12 @@
+@import 'mixins';
+@import 'layout';
+@import 'colors';
+
+html {
+
+  body {
+    background-color: $gray;
+    background: image-url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
