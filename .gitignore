@@ -1,18 +1,33 @@
-*.gem
-*.rbc
-.bundle
-.config
-coverage
-InstalledFiles
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
+# OS-specific
+.DS_Store
 
-# YARD artifacts
-.yardoc
-_yardoc
+# Vagrant stuff
+acceptance_config.yml
+boxes/*
+Vagrantfile
+.vagrant
+tmp/
+cookbooks/
+
+# Bundler/Rubygems
+*.gem
+.bundle
+pkg/*
+tags
+Gemfile.lock
+test/tmp/
+
+# Documentation
+_site/*
+.yardoc/
 doc/
+
+# Python
+*.pyc
+
+# Rubinius
+*.rbc
+
+# IDE junk
+.idea/*
+*.iml
