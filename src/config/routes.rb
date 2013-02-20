@@ -1,6 +1,7 @@
 HolyfireMinistries::Application.routes.draw do
   # devise_for :users
-  resources :pages
+  # resources :pages
   # match ":permalink" => "pages#show", as: :permalink
+  match "/justin-kendrick" => "pages#kendrick"
   root to: "pages#index"
 end

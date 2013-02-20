@@ -1,6 +1,11 @@
 @import 'mixins';
+@import 'grid';
 @import 'layout';
 @import 'colors';
+@import 'footer';
+@import 'header';
+
+* { margin: 0; padding: 0; }
 
 html {
 
@@ -8,5 +13,30 @@ html {
     background-color: $gray;
     background: image-url('background.jpg') no-repeat center center fixed;
     background-size: cover;
+    width: $grid-width;
+    margin: 0px auto;
+    height: 100%;
+
+    wrapper {
+      @include row;
+      min-height: 100%;
+
+      main {
+        overflow: auto;
+        padding-bottom: $footer-height;
+
+        content {
+          @include row;
+          @include col(16);
+         }
+      }
+    }
   }
 }
+
+a {
+  color: #000;
+}
+
+@import 'index';
+
