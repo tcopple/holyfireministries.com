@@ -1,0 +1,30 @@
+#index {
+  .promo-row {
+    @include row;
+
+    .promos {
+      @include prepend(4);
+
+      .promo {
+        @include col(4);
+        padding: 1% 0px;
+
+        .copy {
+          color: black;
+          font-weight: bold;
+          text-align: center;
+
+          a {
+            &.info-link {
+              font-weight: bold;
+            }
+
+            &.booking-link {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

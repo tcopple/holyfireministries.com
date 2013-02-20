@@ -1,0 +1,17 @@
+@import 'mixins';
+@import 'grid';
+@import 'layout';
+@import 'colors';
+
+* { margin: 0; padding: 0; }
+
+html {
+  body {
+    background-color: $green-gray;
+    background: image-url('background-kendrick.png') no-repeat center center fixed;
+    background-size: cover;
+    width: $grid-width;
+    margin: 0px auto;
+    height: 100%;
+  }
+}

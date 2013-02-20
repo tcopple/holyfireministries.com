@@ -1,0 +1,8 @@
+header {
+  @include row;
+  padding: 5% 0px;
+
+  #banner {
+    @include col(16);
+  }
+}
