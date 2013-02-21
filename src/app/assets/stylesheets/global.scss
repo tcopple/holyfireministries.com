@@ -10,8 +10,8 @@
 html {
 
   body {
-    background-color: $gray;
     background: image-url('background.jpg') no-repeat center center fixed;
+    background-color: $gray;
     background-size: cover;
     width: $grid-width;
     margin: 0px auto;
