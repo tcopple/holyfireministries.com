@@ -36,6 +36,10 @@ html {
 
 a {
   color: #000;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 @import 'index';
