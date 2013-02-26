@@ -14,3 +14,18 @@ html {
     background-color: $green-gray;
   }
 }
+
+.filler-row {
+  @include row;
+
+  height: 100px;
+}
+
+.info, .info-form {
+    @include row;
+    @include col(8);
+
+    textarea {
+      width: 80%;
+    }
+}

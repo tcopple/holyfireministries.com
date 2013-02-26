@@ -1,0 +1,19 @@
+.filler-row
+
+- if @message.nil?
+  .info-form
+    .well
+      %form{ action: 'email', method: 'post' }
+        %fieldset
+          %legend Information Request
+          %input{ type: "text", placeholder: "Name" }
+          %input{ type: "text", placeholder: "Phone" }
+          %input{ type: "text", placeholder: "Email" }
+          %textarea{ placeholder: "Describe Event", rows: 5 }
+
+        %button{ type: "submit", class: "btn" } Submit
+- else
+  .info
+    .well
+      %h3
+        = @message
