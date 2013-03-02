@@ -1,15 +1,15 @@
-.filler-row
-
 - if @message.nil?
+  .info
+    %h2 Book Justin Kendrick for your event.
   .info-form
     .well
       %form{ action: 'email', method: 'post' }
         %fieldset
           %legend Information Request
-          %input{ type: "text", placeholder: "Name" }
-          %input{ type: "text", placeholder: "Phone" }
-          %input{ type: "text", placeholder: "Email" }
-          %textarea{ placeholder: "Describe Event", rows: 5 }
+          %input{ type: "text", placeholder: "Name", name: "name" }
+          %input{ type: "text", placeholder: "Phone", name: "phone" }
+          %input{ type: "text", placeholder: "Email", name: "email" }
+          %textarea{ placeholder: "Describe Event", rows: 5, name: "description" }
 
         %button{ type: "submit", class: "btn" } Submit
 - else

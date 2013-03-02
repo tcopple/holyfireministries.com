@@ -12,6 +12,7 @@ html {
     margin: 0px auto;
     height: 100%;
     background-color: $green-gray;
+    color: #fff;
   }
 }
 
@@ -21,11 +22,17 @@ html {
   height: 100px;
 }
 
-.info, .info-form {
-    @include row;
-    @include col(8);
+.info {
+  padding-bottom: 2%;
+  @include row;
+  @include col(16);
+}
 
-    textarea {
+.info-form {
+  @include row;
+  @include col(8);
+
+  textarea {
       width: 80%;
     }
 }
