@@ -19,6 +19,7 @@ gem 'devise'
 gem 'cancan'
 gem 'redcarpet'
 gem 'nokogiri'
+gem 'thin'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
