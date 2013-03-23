@@ -24,6 +24,10 @@ gem 'thin'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
 
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
