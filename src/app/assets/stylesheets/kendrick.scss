@@ -33,6 +33,10 @@ html {
   @include col(8);
 
   textarea {
-      width: 80%;
-    }
+    width: 80%;
+  }
+}
+
+.well {
+  color:$green-gray;
 }
