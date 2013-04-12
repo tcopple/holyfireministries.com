@@ -13,4 +13,4 @@ sudo usermod -a -G rvm vagrant
 cd src
 bundle install
 rails g mongoid:config
-rails s
+rails s -p5100
