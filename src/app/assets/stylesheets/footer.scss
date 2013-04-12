@@ -3,11 +3,12 @@ $footer-height: 4%;
 footer {
   @include row;
   @include col(16);
-  position: absolute;
+  position: relative;
   bottom: $footer-height;
   text-align: center;
-  height: $footer-height;
+  height: 100%;
   clear:both;
+  vertical-align: bottom;
 
   #copyright-symbol:after {
    content:"\00a9";
